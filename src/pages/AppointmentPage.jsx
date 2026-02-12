@@ -39,7 +39,7 @@ function AppointmentPage() {
                 date: formData.date,
                 time: formData.time,
                 message: formData.message,
-                status: 'pending',
+                status: 'pending', // Re-confirmation du statut en attente
                 source: 'website',
                 createdAt: serverTimestamp(),
                 updatedAt: serverTimestamp()
@@ -67,7 +67,7 @@ function AppointmentPage() {
 
     return (
         <div className="appointment-page">
-            <ToastContainer 
+            <ToastContainer
                 position="top-right"
                 autoClose={3000}
                 hideProgressBar={false}
@@ -112,40 +112,40 @@ function AppointmentPage() {
                                 <div className="form-grid-refined">
                                     <div className="form-group-refined">
                                         <label><FiUser /> Nom complet</label>
-                                        <input 
-                                            type="text" 
+                                        <input
+                                            type="text"
                                             name="name"
                                             value={formData.name}
                                             onChange={handleChange}
-                                            placeholder="Ex: Jean Dupont" 
-                                            required 
+                                            placeholder="Ex: Jean Dupont"
+                                            required
                                         />
                                     </div>
                                     <div className="form-group-refined">
                                         <label><FiPhone /> Numéro de téléphone</label>
-                                        <input 
-                                            type="tel" 
+                                        <input
+                                            type="tel"
                                             name="phone"
                                             value={formData.phone}
                                             onChange={handleChange}
-                                            placeholder="Ex: +237 6XX XXX XXX" 
-                                            required 
+                                            placeholder="Ex: +237 6XX XXX XXX"
+                                            required
                                         />
                                     </div>
                                     <div className="form-group-refined">
                                         <label><FiMail /> Adresse Email</label>
-                                        <input 
-                                            type="email" 
+                                        <input
+                                            type="email"
                                             name="email"
                                             value={formData.email}
                                             onChange={handleChange}
-                                            placeholder="votre@email.com" 
-                                            required 
+                                            placeholder="votre@email.com"
+                                            required
                                         />
                                     </div>
                                     <div className="form-group-refined">
                                         <label>Type de service</label>
-                                        <select 
+                                        <select
                                             name="service"
                                             value={formData.service}
                                             onChange={handleChange}
@@ -162,17 +162,17 @@ function AppointmentPage() {
                                     </div>
                                     <div className="form-group-refined">
                                         <label><FiCalendar /> Date souhaitée</label>
-                                        <input 
-                                            type="date" 
+                                        <input
+                                            type="date"
                                             name="date"
                                             value={formData.date}
                                             onChange={handleChange}
-                                            required 
+                                            required
                                         />
                                     </div>
                                     <div className="form-group-refined">
                                         <label><FiClock /> Heure souhaitée</label>
-                                        <select 
+                                        <select
                                             name="time"
                                             value={formData.time}
                                             onChange={handleChange}
@@ -193,18 +193,18 @@ function AppointmentPage() {
 
                                 <div className="form-group-refined">
                                     <label>Notes additionnelles (optionnel)</label>
-                                    <textarea 
+                                    <textarea
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
-                                        placeholder="Décrivez brièvement votre besoin ou vos symptômes..." 
+                                        placeholder="Décrivez brièvement votre besoin ou vos symptômes..."
                                         rows="4"
                                     ></textarea>
                                 </div>
 
                                 <div className="form-footer-refined">
-                                    <button 
-                                        type="submit" 
+                                    <button
+                                        type="submit"
                                         className="btn-pill-refined appointment-submit"
                                         disabled={loading}
                                     >
