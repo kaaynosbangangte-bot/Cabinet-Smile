@@ -42,7 +42,7 @@ const servicesData = [
         image: "/images/services/endodontie.jpg"
     },
     {
-        title: "Radiologie Numérique",
+        title: " Unité d'imagerie odontostomatologique numérique de dernière génération",
         description: "Imagerie de pointe pour un diagnostic précis. Équipés de Cone Beam (Scanner 3D) et de panoramiques numériques, nous réduisons l'exposition aux rayons X tout en augmentant la précision.",
         image: "/images/services/radiologie-numerique.jpg"
     },
