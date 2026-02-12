@@ -13,7 +13,7 @@ function AboutPage() {
             {/* Hero Section */}
             <div className="about-page-hero" data-aos="fade-in">
                 <div className="about-page-hero-content">
-                    <h4>À propos de Smile</h4>
+                    <h4>À propos de Smile cabinet</h4>
                     <h1>Votre partenaire pour une santé dentaire optimale</h1>
                 </div>
             </div>
@@ -28,17 +28,17 @@ function AboutPage() {
                             <p>
                                 Fondé en 2015, le Cabinet Dentaire Smile incarne une vision exigeante de la médecine bucco-dentaire, fondée sur quatre piliers essentiels : précision clinique, technologie de pointe, humanisme et disponibilité.
                             </p>
-                            
+
                             {isExpanded && (
                                 <div className="history-expanded">
                                     <p>
                                         Dès sa création, le cabinet a été pensé comme un lieu où le soin dépasse l'acte médical pour devenir une expérience maîtrisée, rassurante et personnalisée. Chaque patient est unique et est accueilli avec attention, respect et discrétion.
                                     </p>
-                                    
+
                                     <p>
                                         Le Cabinet Dentaire Smile s'appuie aujourd'hui sur six praticiens, disponibles 24h/24 et 7j/7, accompagnés par une équipe d'assistantes qualifiées et engagées. Cette organisation garantit une continuité de soins absolue, dans un environnement moderne, calme et parfaitement sécurisé.
                                     </p>
-                                    
+
                                     <p>
                                         Afin d'offrir une prise en charge fluide, précise et efficiente, nous avons réuni en un seul lieu :
                                     </p>
@@ -48,11 +48,11 @@ function AboutPage() {
                                         <li>Une unité d'imagerie odonto-stomatologique numérique de dernière génération (CBCT 3D)</li>
                                         <li>Une salle de stérilisation aux normes internationales, garantissant une prévention rigoureuse de toute contamination croisée</li>
                                     </ul>
-                                    
+
                                     <p>
                                         Cette infrastructure de pointe nous permet d'intervenir avec exigence et précision, de l'odontologie générale aux disciplines spécialisées telles que l'implantologie, l'orthodontie et la dentisterie esthétique.
                                     </p>
-                                    
+
                                     <p>
                                         Deux principes fondamentaux guident notre pratique quotidienne :
                                     </p>
@@ -62,29 +62,29 @@ function AboutPage() {
                                     <p>
                                         <strong>Redonner le sourire</strong>, avec justesse et naturel, pour que chacun reparte serein, confiant et pleinement satisfait.
                                     </p>
-                                    
+
                                     <p>
                                         Un accueil attentif, une écoute sincère, le respect absolu de votre temps et un suivi personnalisé définissent l'expérience Smile. Ici, chaque détail est pensé pour votre rassurance, votre confort, votre sécurité et votre tranquillité d'esprit.
                                     </p>
-                                    
+
                                     <p style={{ fontWeight: 'bold', marginTop: '1.5rem' }}>
                                         Au Cabinet Dentaire Smile<br />
                                         « On y arrive KO, on en repart OK. »
                                     </p>
-                                    
+
                                     <p style={{ fontStyle: 'italic', marginTop: '1rem' }}>
                                         Dr Boutchouang & l'équipe Smile
                                     </p>
                                 </div>
                             )}
-                            
-                            <button 
-                                onClick={() => setIsExpanded(!isExpanded)} 
+
+                            <button
+                                onClick={() => setIsExpanded(!isExpanded)}
                                 className="btn-read-more"
-                                style={{ 
-                                    marginTop: '1rem', 
-                                    display: 'flex', 
-                                    alignItems: 'center', 
+                                style={{
+                                    marginTop: '1rem',
+                                    display: 'flex',
+                                    alignItems: 'center',
                                     gap: '0.5rem',
                                     background: 'none',
                                     border: 'none',
