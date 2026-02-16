@@ -80,7 +80,7 @@ function GalleryPage() {
             <div className="gallery-page-hero" data-aos="fade-in">
                 <div className="gallery-page-hero-content">
                     <h4>Découvrez notre univers</h4>
-                    <h1>La Smile en images</h1>
+                    <h1>Galerie</h1>
                 </div>
             </div>
 
