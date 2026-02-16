@@ -2,59 +2,68 @@ import { FiCamera, FiLayout, FiUser, FiActivity } from 'react-icons/fi'
 import { useState } from 'react'
 
 const galleryImages = [
+    // Clinique / Salles
     {
         id: 1,
-        url: '/images/about/about-cabinet.jpg',
+        url: '/images/gallery/clinique/accueil.jpg',
         category: 'salle',
-        title: 'Façade extérieurs du cabinet'
+        title: 'Espace Accueil & Réception'
     },
     {
         id: 2,
-        url: '/images/about/accueil-cabinet.jpg',
+        url: '/images/gallery/clinique/couloir.jpg',
         category: 'salle',
-        title: 'Espace accueil et attente'
+        title: 'Accès aux Salles de Soins'
     },
     {
         id: 3,
-        url: '/images/about/smile-accueil.jpg',
+        url: '/images/gallery/clinique/couloir%20espace.jpg',
         category: 'salle',
-        title: 'Réception Smile'
+        title: 'Espace Circulation Lumineux'
     },
     {
         id: 4,
-        url: '/images/about-cabinet-hero.jpg',
+        url: '/images/gallery/clinique/sale%20de%20réunion.jpg',
         category: 'salle',
-        title: 'Salles de soins modernes'
+        title: 'Salle de Conférence & Réunion'
     },
     {
         id: 5,
-        url: '/images/service-cabinet-hero.jpg',
-        category: 'equipement',
-        title: 'Équipements de pointe'
+        url: '/images/gallery/clinique/smile.jpg',
+        category: 'salle',
+        title: 'Ambiance Smile'
     },
+    // Équipe / Personnel
     {
         id: 6,
-        url: '/images/actualité-cabinet-hero.jpg',
-        category: 'equipement',
-        title: 'Unité de diagnostic'
+        url: '/images/gallery/equipe/equipe%20de%20la%20clinique%20.jpg',
+        category: 'personnel',
+        title: 'L\'Équipe du Cabinet Smile'
     },
+    // Technologie / Équipement
     {
         id: 7,
-        url: '/images/about/directeur-cabinet.jpg',
-        category: 'personnel',
-        title: 'Dr. Mike & Direction'
+        url: '/images/gallery/technologie/equipement%201.jpg',
+        category: 'equipement',
+        title: 'Unité de Soin Haute Performance'
     },
     {
         id: 8,
-        url: '/images/services/consultation-diagnostic.jpg',
-        category: 'personnel',
-        title: 'Consultation & Expertise'
+        url: '/images/gallery/technologie/equipement%202.jpg',
+        category: 'equipement',
+        title: 'Plateau Technique Moderne'
     },
     {
         id: 9,
-        url: '/images/services/radiologie-numerique.jpg',
+        url: '/images/gallery/technologie/equipement%203.jpg',
         category: 'equipement',
-        title: 'Scanner 3D (CBCT)'
+        title: 'Diagnostic de Précision'
+    },
+    {
+        id: 10,
+        url: '/images/gallery/technologie/equipement%204.jpg',
+        category: 'equipement',
+        title: 'Confort & Technologie'
     }
 ];
 
