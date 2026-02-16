@@ -7,15 +7,15 @@ function FAQ() {
     const faqs = [
         {
             question: 'Quels services proposez-vous chez Smile ?',
-            answer: 'Nous proposons une gamme complète de services dentaires incluant l\'orthodontie, les implants dentaires, la radiologie, le blanchiment, les extractions et les soins préventifs.'
+            answer: 'Nous proposons une vaste gamme de services spécialisés : Consultation & Diagnostic, Implantologie, Blanchiment bucco-dentaire, Soins & Prothèses, Orthodontie, Pédodontie (soins enfants), Chirurgie Maxillo-faciale, Endodontie, Radiologie 3D (CBCT) et Odontologie Restauratrice.'
         },
         {
             question: 'Comment prendre rendez-vous ?',
             answer: 'Vous pouvez prendre rendez-vous par téléphone, par email ou directement via notre formulaire de contact en ligne. Nous vous répondrons dans les plus brefs délais.'
         },
         {
-            question: 'Acceptez-vous les urgences dentaires ?',
-            answer: 'Oui, nous réservons des créneaux pour les urgences dentaires. Contactez-nous rapidement et nous ferons notre possible pour vous recevoir le jour même.'
+            question: 'Acceptez-vous les urgences bucco-dentaires ?',
+            answer: 'Oui, nous assurons une prise en charge des Urgences 24h/24 & 7j/7. En cas de douleur aiguë ou d\'accident, contactez-nous immédiatement au numéro d\'urgence.'
         },
         {
             question: 'Quels modes de paiement acceptez-vous ?',

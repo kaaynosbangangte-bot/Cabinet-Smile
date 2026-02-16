@@ -2,51 +2,61 @@ import CTA from '../components/CTA'
 
 const servicesData = [
     {
+        id: "consultation",
         title: "Consultation & Diagnostic",
         description: "Une étape cruciale pour identifier vos besoins. Nous réalisons un examen complet, des radiographies numériques si nécessaire, et élaborons un plan de traitement personnalisé adapté à votre situation unique.",
         image: "/images/services/consultation-diagnostic.jpg"
     },
     {
+        id: "implantologie",
         title: "Implantologie",
         description: "Retrouvez le confort et l'esthétique d'une dentition complète. Nous utilisons des implants de haute technologie pour remplacer les dents manquantes de manière durable et naturelle.",
         image: "/images/services/implantologie.jpg"
     },
     {
-        title: "Blanchiment dentaire",
+        id: "blanchiment",
+        title: "Blanchiment bucco-dentaire",
         description: "Redonnez de l'éclat à votre sourire. Nos techniques de blanchiment professionnel sont sûres, rapides et offrent des résultats visibles dès la première séance, tout en préservant l'émail de vos dents.",
         image: "/images/services/blanchiment-dentaire.jpg"
     },
     {
-        title: "Soins & Prothèse Dentaire",
+        id: "prothese",
+        title: "Soins & Prothèse Bucco-Dentaire",
         description: "Expertise complète pour restaurer la fonction et l'esthétique. Qu'il s'agisse de couronnes, de ponts ou de prothèses amovibles, nous concevons des solutions sur mesure d'une qualité irréprochable.",
         image: "/images/services/prothese-dentaire.jpg"
     },
     {
+        id: "orthodontie",
         title: "Orthodontie",
         description: "Alignez vos dents en toute discrétion. Pour enfants et adultes, nous proposons des solutions modernes comme les bagues céramiques ou les aligneurs transparents pour un sourire harmonieux.",
         image: "/images/services/orthodontie.jpg"
     },
     {
+        id: "pedodontie",
         title: "Pédodontie",
         description: "Des soins adaptés aux plus jeunes dans un environnement rassurant. Nous mettons tout en œuvre pour que la visite chez le dentiste soit une expérience positive pour vos enfants.",
         image: "/images/services/pedodontie.jpg"
     },
     {
+        id: "chirurgie",
         title: "Chirurgie Traumatologie & Maxillo-faciale",
         description: "Expertise chirurgicale pour les cas complexes. Extractions de dents de sagesse, greffes osseuses et interventions spécialisées réalisées avec la plus grande précision et sécurité.",
         image: "/images/services/chirurgie-maxillo.jpg"
     },
     {
+        id: "endodontie",
         title: "Endodontie",
         description: "Sauvez vos dents naturelles. Spécialisés dans le traitement des canaux radiculaires, nous utilisons des microscopes opératoires pour assurer le succès de vos traitements endodontiques.",
         image: "/images/services/endodontie.jpg"
     },
     {
+        id: "radiologie",
         title: " Unité d'imagerie odontostomatologique numérique de dernière génération",
         description: "Imagerie de pointe pour un diagnostic précis. Équipés de Cone Beam (Scanner 3D) et de panoramiques numériques, nous réduisons l'exposition aux rayons X tout en augmentant la précision.",
         image: "/images/services/radiologie-numerique.jpg"
     },
     {
+        id: "restauratrice",
         title: "Odontologie Restauratrice",
         description: "Réparation discrète et esthétique des dents abîmées. Nous utilisons des matériaux composites de dernière génération pour traiter les caries et restaurer l'intégrité de vos dents.",
         image: "/images/services/odontologie-restauratrice.jpg"
@@ -70,6 +80,7 @@ function ServicesPage() {
                     {servicesData.map((service, index) => (
                         <div
                             key={index}
+                            id={service.id}
                             className="service-detail-card"
                             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
                         >

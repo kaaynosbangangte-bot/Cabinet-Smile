@@ -20,7 +20,7 @@ const newsArticles = [
         image: "/images/news/article-4.jpg"
     },
     {
-        title: "Prévention dentaire pour toute la famille",
+        title: "Prévention bucco-dentaire pour toute la famille",
         description: "Des conseils pratiques et des soins préventifs adaptés à chaque âge pour garantir une santé bucco-dentaire optimale.",
         image: "/images/news/article-5.jpg"
     },

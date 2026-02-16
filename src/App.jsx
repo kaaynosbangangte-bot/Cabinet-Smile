@@ -8,6 +8,8 @@ import ServicesPage from './pages/ServicesPage'
 import NewsPage from './pages/NewsPage'
 import ContactPage from './pages/ContactPage'
 import AppointmentPage from './pages/AppointmentPage'
+import GalleryPage from './pages/GalleryPage'
+import SatisfactionWidget from './components/SatisfactionWidget'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
@@ -33,9 +35,11 @@ function App() {
                     <Route path="/actualites" element={<NewsPage />} />
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/appointment" element={<AppointmentPage />} />
+                    <Route path="/galerie" element={<GalleryPage />} />
                 </Routes>
             </main>
             <Footer />
+            <SatisfactionWidget />
         </Router>
     )
 }

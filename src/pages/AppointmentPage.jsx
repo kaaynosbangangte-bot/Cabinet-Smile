@@ -156,8 +156,8 @@ function AppointmentPage() {
                                             <option value="detartrage">Détartrage & Nettoyage</option>
                                             <option value="implant">Implantologie</option>
                                             <option value="ortho">Orthodontie</option>
-                                            <option value="blanchiment">Blanchiment dentaire</option>
-                                            <option value="urgence">Urgence dentaire</option>
+                                            <option value="blanchiment">Blanchiment bucco-dentaire</option>
+                                            <option value="urgence">Urgence bucco-dentaire</option>
                                         </select>
                                     </div>
                                     <div className="form-group-refined">
@@ -215,6 +215,28 @@ function AppointmentPage() {
                             </form>
                         </div>
                     )}
+                </div>
+            </section>
+
+            {/* Satisfaction Questionnaire Static Section */}
+            <section className="appointment-satisfaction-section">
+                <div className="container">
+                    <div className="satisfaction-static-card" data-aos="fade-up">
+                        <div className="satisfaction-static-content">
+                            <div className="satisfaction-static-text">
+                                <h3>Votre avis nous est précieux</h3>
+                                <p>Pour nous aider à toujours mieux vous servir, merci de prendre un court instant pour répondre à notre questionnaire de satisfaction.</p>
+                            </div>
+                            <a
+                                href="http://kaaynosbangangte-bot.github.io/questionnaire-satisfaction/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn-pill-refined satisfaction-static-btn"
+                            >
+                                Répondre au questionnaire
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

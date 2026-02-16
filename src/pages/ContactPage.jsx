@@ -17,9 +17,9 @@ function ContactPage() {
                     <div className="contact-info-grid">
                         <div className="info-text-side" data-aos="fade-right">
                             <h4>Rendez-nous visite / appelez-nous</h4>
-                            <h2>Moyens pratiques pour contacter le Cabinet dentaire smile</h2>
+                            <h2>Moyens pratiques pour contacter le Cabinet bucco-dentaire smile</h2>
                             <p>
-                                Chez Cabinet dentaire Smile, votre sourire est notre priorité. Contactez-nous pour des soins personnalisés et des conseils adaptés à votre santé dentaire.
+                                Chez Cabinet bucco-dentaire Smile, votre sourire est notre priorité. Contactez-nous pour des soins personnalisés et des conseils adaptés à votre santé bucco-dentaire.
                             </p>
                             <div className="contact-methods">
                                 <div className="method-item">
@@ -34,9 +34,8 @@ function ContactPage() {
                         <div className="hours-card" data-aos="fade-left">
                             <h3><FiRefreshCw /> Horaires d'ouverture</h3>
                             <ul className="hours-list">
-                                <li><FiCheckCircle /> Lundi à Vendredi : 08h00 - 20h00</li>
-                                <li><FiCheckCircle /> Samedi : 08h00 - 18h00</li>
-                                <li><FiCheckCircle /> Dimanche et jours fériés sur RDV</li>
+                                <li><FiCheckCircle /> Lundi au Dimanche, 24h/24 et 7j/7 </li>
+
                             </ul>
                             <div className="urgency-box">
                                 <strong>Urgence 24h/24 & 7j/7</strong>
@@ -81,13 +80,21 @@ function ContactPage() {
 
             {/* Map Section */}
             <section className="map-section" data-aos="zoom-in">
-                <iframe
-                    title="Carte Cabinet Smile"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15873.918991278148!2d10.4208226!3d5.4746864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10f00c5000000001%3A0xe5a3c9e6c38f6b86!2sBafoussam!5e0!3m2!1sfr!2scm!4v1700000000000"
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <a
+                    href="https://maps.app.goo.gl/uX7Ww5o7Jv7x8_b86"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="map-link"
+                >
+                    <img
+                        src="/images/localisation.png"
+                        alt="Localisation Cabinet Smile à Bafoussam"
+                        className="map-static-image"
+                    />
+                    {/* <div className="map-overlay-hint">
+                        <span>Cliquez pour ouvrir dans Google Maps</span>
+                    </div> */}
+                </a>
             </section>
         </div>
     )

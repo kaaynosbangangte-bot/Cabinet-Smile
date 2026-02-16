@@ -12,17 +12,17 @@ function About() {
                         </div>
                         <h2 className="about-title-refined">
                             Dédiés à votre santé <br />
-                            <span>dentaire</span>
+                            <span>bucco-dentaire</span>
                         </h2>
                         <p className="about-description-refined">
-                            <strong>Au Cabinet Dentaire Smile</strong> nous mettons notre savoir-faire au service de votre santé bucco-dentaire dans un cadre accueillant et respectueux. Nous accompagnons chaque patient avec attention, en privilégiant la sécurité, le confort et des soins adaptés à ses besoins.
+                            <strong>Au Cabinet Bucco-Dentaire Smile</strong> nous mettons notre savoir-faire au service de votre santé bucco-dentaire dans un cadre accueillant et respectueux. Nous accompagnons chaque patient avec attention, en privilégiant la sécurité, le confort et des soins adaptés à ses besoins.
                         </p>
                         <Link to="/apropos" className="btn-about">Voir plus</Link>
                     </div>
                     <div className="about-image-refined" data-aos="fade-up" data-aos-delay="200">
                         <img
                             src="/images/about/about-cabinet.jpg"
-                            alt="Cabinet Dentaire Smile"
+                            alt="Cabinet Bucco-Dentaire Smile"
                             className="img-rounded"
                         />
                     </div>

@@ -15,7 +15,7 @@ function Testimonials() {
         },
         {
             name: 'Patrick',
-            role: 'Patien',
+            role: 'Patient',
             text: ' Accueil impeccable et personnel très compétent. On se sent immédiatement à l’aise et en sécurité.',
             rating: 5,
             avatar: '/images/testimonials/patient-2.webp'

@@ -1,4 +1,4 @@
-import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi'
+// import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
@@ -63,25 +63,25 @@ function Team() {
         },
         {
             name: 'Mme MAWA Caroline',
-            role: 'Assistante Dentaire',
+            role: 'Assistante Bucco-Dentaire',
             img: '/images/team/mme-mawa-caroline.jpg',
             oncdc: null
         },
         {
             name: 'Mme DOUGLA Christelle',
-            role: 'Assistante Dentaire',
+            role: 'Assistante Bucco-Dentaire',
             img: '/images/team/mme-dougla-christelle.jpg',
             oncdc: null
         },
         {
             name: 'Mme DONFACK Esther',
-            role: 'Assistante Dentaire',
+            role: 'Assistante Bucco-Dentaire',
             img: '/images/team/mme-donfack-esther.jpg',
             oncdc: null
         },
         {
             name: 'Mme ADIFFO Valoide',
-            role: 'Assistante Dentaire',
+            role: 'Assistante Bucco-Dentaire',
             img: '/images/team/mme-adiffo-valoide.jpg',
             oncdc: null
         }
@@ -118,11 +118,11 @@ function Team() {
                                 <h3 className="team-name-refined">{member.name}</h3>
                                 <p className="team-role-refined">{member.role}</p>
                                 {member.oncdc && <p className="team-reg-refined">ONCDC N° {member.oncdc}</p>}
-                                <div className="team-socials-refined">
+                                {/* <div className="team-socials-refined">
                                     <a href="#" className="social-icon-refined"><FiFacebook /></a>
                                     <a href="#" className="social-icon-refined"><FiTwitter /></a>
                                     <a href="#" className="social-icon-refined"><FiInstagram /></a>
-                                </div>
+                                </div> */}
                             </div>
                         </SwiperSlide>
                     ))}

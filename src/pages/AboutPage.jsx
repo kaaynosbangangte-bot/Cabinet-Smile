@@ -13,8 +13,8 @@ function AboutPage() {
             {/* Hero Section */}
             <div className="about-page-hero" data-aos="fade-in">
                 <div className="about-page-hero-content">
-                    <h4>À propos de Smile cabinet</h4>
-                    <h1>Votre partenaire pour une santé dentaire optimale</h1>
+                    <h4>À propos du Cabinet Bucco-Dentaire Smile</h4>
+                    <h1>Votre partenaire pour une santé bucco-dentaire optimale</h1>
                 </div>
             </div>
 
@@ -24,28 +24,34 @@ function AboutPage() {
                     <div className="about-who-grid">
                         <div className="about-who-text" data-aos="fade-right">
                             <h4>Qui sommes-nous ?</h4>
-                            <h2>Une référence d'excellence en soins dentaires modernes</h2>
+                            <h2>Une référence d'excellence en soins bucco-dentaires modernes</h2>
                             <p>
-                                Fondé en 2015, le Cabinet Dentaire Smile incarne une vision exigeante de la médecine bucco-dentaire, fondée sur quatre piliers essentiels : précision clinique, technologie de pointe, humanisme et disponibilité.
+                                Fondé en 2015, le Cabinet Bucco-Dentaire Smile incarne une vision moderne de la médecine bucco-dentaire, fondée sur quatre piliers essentiels :
                             </p>
+                            <ul className="simple-doc-list grid-2">
+                                <li>Précision clinique</li>
+                                <li>Technologie de pointe</li>
+                                <li>Humanisme</li>
+                                <li>Disponibilité</li>
+                            </ul>
 
                             {isExpanded && (
-                                <div className="history-expanded">
+                                <div className="history-expanded-simple">
                                     <p>
                                         Dès sa création, le cabinet a été pensé comme un lieu où le soin dépasse l'acte médical pour devenir une expérience maîtrisée, rassurante et personnalisée. Chaque patient est unique et est accueilli avec attention, respect et discrétion.
                                     </p>
 
                                     <p>
-                                        Le Cabinet Dentaire Smile s'appuie aujourd'hui sur six praticiens, disponibles 24h/24 et 7j/7, accompagnés par une équipe d'assistantes qualifiées et engagées. Cette organisation garantit une continuité de soins absolue, dans un environnement moderne, calme et parfaitement sécurisé.
+                                        Le Cabinet Bucco-Dentaire Smile s'appuie aujourd'hui sur six praticiens, disponibles 24h/24 et 7j/7, accompagnés par une équipe d'assistantes qualifiées et engagées. Cette organisation garantit une continuité de soins absolue, dans un environnement moderne, calme et parfaitement sécurisé.
                                     </p>
 
                                     <p>
                                         Afin d'offrir une prise en charge fluide, précise et efficiente, nous avons réuni en un seul lieu :
                                     </p>
-                                    <ul>
+                                    <ul className="simple-doc-list">
                                         <li>Cinq unités de soins autonomes et entièrement équipées</li>
-                                        <li>Un laboratoire de prothèses dentaires intégré et numérisé</li>
-                                        <li>Une unité d'imagerie odonto-stomatologique numérique de dernière génération (CBCT 3D)</li>
+                                        <li>Un laboratoire de prothèses bucco-dentaires intégré et numérisé</li>
+                                        <li>Une unité d'imagerie odonto-stomatologique numérique de dernière génération (CBCT-3D)</li>
                                         <li>Une salle de stérilisation aux normes internationales, garantissant une prévention rigoureuse de toute contamination croisée</li>
                                     </ul>
 
@@ -56,23 +62,20 @@ function AboutPage() {
                                     <p>
                                         Deux principes fondamentaux guident notre pratique quotidienne :
                                     </p>
-                                    <p>
-                                        <strong>Anticiper, prévenir, soulager et préserver</strong>, afin d'inscrire chaque patient dans une démarche personnalisée et durable de santé bucco-dentaire.
-                                    </p>
-                                    <p>
-                                        <strong>Redonner le sourire</strong>, avec justesse et naturel, pour que chacun reparte serein, confiant et pleinement satisfait.
-                                    </p>
+                                    <ul className="simple-doc-list">
+                                        <li><strong>Anticiper, prévenir, soulager et préserver</strong>, afin d'inscrire chaque patient dans une démarche personnalisée et durable de santé bucco-dentaire.</li>
+                                        <li><strong>Redonner le sourire</strong>, avec justesse et naturel, pour que chacun reparte serein, confiant et pleinement satisfait.</li>
+                                    </ul>
 
                                     <p>
                                         Un accueil attentif, une écoute sincère, le respect absolu de votre temps et un suivi personnalisé définissent l'expérience Smile. Ici, chaque détail est pensé pour votre rassurance, votre confort, votre sécurité et votre tranquillité d'esprit.
                                     </p>
 
-                                    <p style={{ fontWeight: 'bold', marginTop: '1.5rem' }}>
-                                        Au Cabinet Dentaire Smile<br />
+                                    <p className="simple-doc-signature">
+                                        Au Cabinet Bucco-Dentaire Smile<br />
                                         « On y arrive KO, on en repart OK. »
                                     </p>
-
-                                    <p style={{ fontStyle: 'italic', marginTop: '1rem' }}>
+                                    <p className="simple-doc-author">
                                         Dr Boutchouang & l'équipe Smile
                                     </p>
                                 </div>
@@ -168,9 +171,12 @@ function AboutPage() {
                         </div>
                         <div className="cta-split-content" data-aos="fade-left">
                             <h4>Appel à l'action</h4>
-                            <h2>Prêt à découvrir la smile ?</h2>
+                            <h2>Prêt à découvrir Smile ?</h2>
                             <p>Ne tardez plus pour prendre soin de votre sourire. Contactez-nous dès aujourd'hui et bénéficiez de notre expertise professionnelle adaptée à vos besoins.</p>
-                            <Link to="/appointment" className="btn-pill-refined">Prendre un rendez-vous</Link>
+                            <div className="about-cta-buttons">
+                                <Link to="/appointment" className="btn-pill-refined">Prendre un rendez-vous</Link>
+                                <Link to="/galerie" className="btn-pill-outline-refined">Explorer la Galerie</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
