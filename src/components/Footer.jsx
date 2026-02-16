@@ -11,7 +11,7 @@ function Footer() {
                             <img src="/logo.png" alt="Cabinet Bucco-Dentaire Smile" className="footer-logo-img" />
                         </Link>
                         <p className="footer-description-refined">
-                            Votre cabinet bucco-dentaire de confiance. Des soins d'exception dans un environnement luxueux et bienveillant pour redonner vie à votre sourire.
+                            Votre cabinet bucco-dentaire de confiance. Des soins de qualité dans un cadre chaleureux et rassurant pour prendre soin de votre sourire.
                         </p>
                         <div className="social-links-refined">
                             <a href="#" className="social-link-refined" aria-label="Facebook"><FiFacebook /></a>
@@ -40,7 +40,7 @@ function Footer() {
                             <li><Link to="/services#orthodontie">Orthodontie</Link></li>
                             <li><Link to="/services#implantologie">Implantologie</Link></li>
                             <li><Link to="/services#blanchiment">Esthétique</Link></li>
-                            <li><Link to="/services#restauratrice">Restauratrice</Link></li>
+                            <li><Link to="/services#restauratrice">Pédodontie</Link></li>
                         </ul>
                     </div>
 
@@ -49,8 +49,8 @@ function Footer() {
                         <ul className="footer-contact-list-refined">
                             <li><FiPhone /> <span>+237 233 44 45 68 / +237 675 06 99 63</span></li>
                             <li><FiMail /> <span>cabinetssmile@yahoo.com</span></li>
-                            <li><FiMapPin /> <span>Bafoussam, Cameroun</span></li>
-                            <li><FiClock /> <span>Ouvert 24h/24 & 7j/7</span></li>
+                            <li><FiMapPin /> <span>Bafoussam - Tamdja, 1er étage Immeuble Guifeurou</span></li>
+                            <li><FiClock /> <span>ouvert tout les jours du lundi au dimanche 24h/24 et 7j/7</span></li>
                         </ul>
                     </div>
                 </div>

@@ -58,7 +58,7 @@ function Contact() {
                                 <div className="contact-icon-refined"><FiMapPin /></div>
                                 <div className="contact-text-refined">
                                     <strong>Adresse</strong>
-                                    <span>Bafoussam, Cameroun</span>
+                                    <span>Bafoussam - Tamdja, 1er étage Immeuble Guifeurou</span>
                                 </div>
                             </div>
                             <div className="contact-item-refined">

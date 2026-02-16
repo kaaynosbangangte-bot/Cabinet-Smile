@@ -142,28 +142,7 @@ function GalleryPage() {
                 </div>
             </div>
 
-            {/* Gallery Intro Text */}
-            <section className="gallery-intro">
-                <div className="container">
-                    <div className="intro-card-grid">
-                        <div className="gallery-card" data-aos="fade-right">
-                            <FiLayout />
-                            <h3>Un cadre luxueux</h3>
-                            <p>Des espaces pensés pour votre sérénité et votre bien-être dès votre arrivée.</p>
-                        </div>
-                        <div className="gallery-card" data-aos="fade-up">
-                            <FiActivity />
-                            <h3>Haute technologie</h3>
-                            <p>Le meilleur de la technologie bucco-dentaire mondiale au service de votre diagnostic.</p>
-                        </div>
-                        <div className="gallery-card" data-aos="fade-left">
-                            <FiUser />
-                            <h3>Expertise humaine</h3>
-                            <p>Une équipe dévouée pour une expérience de soin personnalisée et chaleureuse.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
         </div>
     )
 }

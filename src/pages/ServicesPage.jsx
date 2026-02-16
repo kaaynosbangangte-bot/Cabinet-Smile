@@ -15,14 +15,14 @@ const servicesData = [
     },
     {
         id: "blanchiment",
-        title: "Blanchiment bucco-dentaire",
-        description: "Redonnez de l'éclat à votre sourire. Nos techniques de blanchiment professionnel sont sûres, rapides et offrent des résultats visibles dès la première séance, tout en préservant l'émail de vos dents.",
+        title: "Esthétique bucco-dentaire",
+        description: "Harmoniser, restaurer, embellir : facettes céramique, couronnes et soins esthétiques pour un sourire naturel et lumineux, dans le respect de votre visage.",
         image: "/images/services/blanchiment-dentaire.jpg"
     },
     {
         id: "prothese",
-        title: "Soins & Prothèse Bucco-Dentaire",
-        description: "Expertise complète pour restaurer la fonction et l'esthétique. Qu'il s'agisse de couronnes, de ponts ou de prothèses amovibles, nous concevons des solutions sur mesure d'une qualité irréprochable.",
+        title: "Soins & Prothèses Dentaires",
+        description: "Expertise complète pour restaurer la fonction et l'esthétique. Qu'il s'agisse de couronnes, de ponts ou de prothèses amovibles, nous concevons des solutions sur mesure.",
         image: "/images/services/prothese-dentaire.jpg"
     },
     {
@@ -39,7 +39,7 @@ const servicesData = [
     },
     {
         id: "chirurgie",
-        title: "Chirurgie Traumatologie & Maxillo-faciale",
+        title: "Chirurgie Traumatologique & Maxillo-faciale",
         description: "Expertise chirurgicale pour les cas complexes. Extractions de dents de sagesse, greffes osseuses et interventions spécialisées réalisées avec la plus grande précision et sécurité.",
         image: "/images/services/chirurgie-maxillo.jpg"
     },
@@ -51,14 +51,14 @@ const servicesData = [
     },
     {
         id: "radiologie",
-        title: " Unité d'imagerie odontostomatologique numérique de dernière génération",
+        title: " Unité d'imagerie odontostomatologique numérique (CBCT-3D)",
         description: "Imagerie de pointe pour un diagnostic précis. Équipés de Cone Beam (Scanner 3D) et de panoramiques numériques, nous réduisons l'exposition aux rayons X tout en augmentant la précision.",
         image: "/images/services/radiologie-numerique.jpg"
     },
     {
         id: "restauratrice",
         title: "Odontologie Restauratrice",
-        description: "Réparation discrète et esthétique des dents abîmées. Nous utilisons des matériaux composites de dernière génération pour traiter les caries et restaurer l'intégrité de vos dents.",
+        description: "Réparation discrète et esthétique des dents abîmées. Nous utilisons des matériaux composites pour traiter les caries et restaurer l'intégrité de vos dents.",
         image: "/images/services/odontologie-restauratrice.jpg"
     }
 ];
@@ -70,7 +70,7 @@ function ServicesPage() {
             <div className="services-page-hero" data-aos="fade-in">
                 <div className="services-page-hero-content">
                     <h4>Nos services</h4>
-                    <h1>Votre sourire mérite un accompagnement d'exception</h1>
+                    <h1>Votre sourire, notre priorité.</h1>
                 </div>
             </div>
 

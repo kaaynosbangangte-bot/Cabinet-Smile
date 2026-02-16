@@ -51,7 +51,7 @@ function AboutPage() {
                                     <ul className="simple-doc-list">
                                         <li>Cinq unités de soins autonomes et entièrement équipées</li>
                                         <li>Un laboratoire de prothèses bucco-dentaires intégré et numérisé</li>
-                                        <li>Une unité d'imagerie odonto-stomatologique numérique de dernière génération (CBCT-3D)</li>
+                                        <li>Une unité d'imagerie odonto-stomatologique numérique (CBCT-3D)</li>
                                         <li>Une salle de stérilisation aux normes internationales, garantissant une prévention rigoureuse de toute contamination croisée</li>
                                     </ul>
 
@@ -91,7 +91,7 @@ function AboutPage() {
                                     gap: '0.5rem',
                                     background: 'none',
                                     border: 'none',
-                                    color: '#0066cc',
+                                    color: 'var(--primary-green)',
                                     cursor: 'pointer',
                                     fontSize: '1rem',
                                     fontWeight: '500'
@@ -153,9 +153,9 @@ function AboutPage() {
             <section className="clinic-visit-section" data-aos="zoom-in">
                 <div className="clinic-visit-content">
                     <h4>Visite de la clinique</h4>
-                    <h2>Des installations modernes pour des soins d'exception</h2>
-                    <p>Votre clinique dispose d'équipements de dernière génération et d'un environnement moderne, conçu pour garantir votre confort et un traitement agréable.</p>
-                    <a href="#" className="btn-visit">Explorer la clinique</a>
+                    <h2>Des soins dans un environnement  securise ,moderne et apaisant.</h2>
+                    {/* <p>Votre clinique dispose d'équipements de dernière génération et d'un environnement moderne, conçu pour garantir votre confort et un traitement agréable.</p> */}
+                    <Link to="/galerie" className="btn-visit">Explorer la clinique</Link>
                 </div>
             </section>
 

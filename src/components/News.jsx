@@ -1,27 +1,11 @@
 import { FiArrowRight } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 
+import { newsArticles } from '../data/newsData'
+
 function News() {
-    const articles = [
-        {
-            title: 'Guide complet pour un sourire éclatant',
-            excerpt: 'Découvrez les rituels quotidiens et les soins professionnels pour maintenir une blancheur naturelle et une santé buccale parfaite.',
-            date: '28 Janvier 2026',
-            image: '/images/news/article-1.jpg'
-        },
-        {
-            title: 'L’implantologie : une solution de vie',
-            excerpt: 'Les technologies modernes nous permettent aujourd’hui de restaurer votre sourire de manière durable, indolore et esthétique.',
-            date: '22 Janvier 2026',
-            image: '/images/news/article-2.jpg'
-        },
-        {
-            title: 'Orthodontie invisible pour adultes',
-            excerpt: 'Redécouvrez le plaisir de sourire grâce à nos solutions de bagues invisibles, alliant discrétion absolue et efficacité remarquable.',
-            date: '15 Janvier 2026',
-            image: '/images/news/article-3.jpg'
-        }
-    ]
+    // Utilisation des 3 premiers articles pour l'accueil
+    const displayArticles = newsArticles.slice(0, 3);
 
     return (
         <section className="news-refined" id="actualites">
@@ -35,7 +19,7 @@ function News() {
                 </div>
 
                 <div className="news-grid-refined">
-                    {articles.map((article, index) => (
+                    {displayArticles.map((article, index) => (
                         <article
                             key={index}
                             className="news-card-refined"

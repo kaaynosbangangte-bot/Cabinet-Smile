@@ -34,7 +34,7 @@ function ContactPage() {
                         <div className="hours-card" data-aos="fade-left">
                             <h3><FiRefreshCw /> Horaires d'ouverture</h3>
                             <ul className="hours-list">
-                                <li><FiCheckCircle /> Lundi au Dimanche, 24h/24 et 7j/7 </li>
+                                <li><FiCheckCircle /> ouvert tout les jours du lundi au dimanche 24h/24 et 7j/7 </li>
 
                             </ul>
                             <div className="urgency-box">

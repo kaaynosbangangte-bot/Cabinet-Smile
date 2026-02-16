@@ -23,6 +23,11 @@
   --radius-lg: 20px;
   --radius-pill: 100px;
   --transition: all 0.3s ease;
+
+  /* Swiper Global Overrides */
+  --swiper-theme-color: var(--primary-green);
+  --swiper-navigation-color: var(--primary-green);
+  --swiper-pagination-color: var(--primary-green);
 }
 
 /* Reset et styles de base */
@@ -3261,6 +3266,108 @@ img {
     right: 20px;
   }
 }
+
+/* ============================================
+   NEWS SYSTEM ENHANCEMENTS
+   ============================================ */
+.news-page-item-wrapper {
+  margin-bottom: 30px;
+}
+
+.news-card-refined.expanded {
+  grid-column: 1 / -1;
+  /* Prend toute la largeur si possible */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.news-category-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(138, 190, 48, 0.1);
+  color: var(--primary-green);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.news-read-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: var(--primary-green);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 0;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  margin: 15px auto 0 auto;
+}
+
+.news-read-more-btn:hover {
+  gap: 12px;
+  color: var(--primary-green-dark);
+}
+
+.news-full-content-expanded {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #efefef;
+  text-align: left;
+  animation: fadeIn 0.4s ease;
+}
+
+.news-full-content-expanded p {
+  line-height: 1.8;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.news-full-content-expanded h4 {
+  color: var(--dark-blue);
+  margin: 30px 0 15px 0;
+  font-size: 1.2rem;
+}
+
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.news-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.news-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* ============================================
    SIMPLE ABOUT PAGE STYLES
