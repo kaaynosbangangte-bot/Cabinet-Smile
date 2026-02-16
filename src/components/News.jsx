@@ -28,9 +28,9 @@ function News() {
             <div className="container">
                 <div className="news-header-refined" data-aos="fade-up">
                     <h4 className="news-subtitle-refined">Actualités</h4>
-                    <h2 className="news-title-refined">Les conseils de nos experts</h2>
+                    <h2 className="news-title-refined">Le fil d'actu du Cabinet Smile</h2>
                     <p className="news-description-refined">
-                        Explorez nos derniers articles pour prendre soin de votre sourire au quotidien.
+                        Restez informé des nouveautés du Cabinet Smile et de nos précieux conseils pour votre santé bucco-dentaire.
                     </p>
                 </div>
 
