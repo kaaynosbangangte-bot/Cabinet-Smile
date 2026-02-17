@@ -19,7 +19,7 @@ function FAQ() {
         },
         {
             question: 'Quels modes de paiement acceptez-vous ?',
-            answer: 'Nous acceptons les paiements par carte bancaire, espèces et chèques. Nous proposons également des facilités de paiement pour les traitements importants.'
+            answer: 'Nous acceptons les paiements par Orange Money, MoMo, espèces et chèques. Nous proposons également des facilités de paiement pour les traitements importants.'
         }
     ]
 
