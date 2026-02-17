@@ -20,7 +20,7 @@ function Services() {
         {
             image: '/images/esthetique-dentaire.jpg',
             title: 'Esthétique bucco-dentaire',
-            description: 'Blanchiment et facettes pour un sourire éclatant et harmonieux.'
+            description: 'facettes pour un sourire éclatant et harmonieux.'
         },
         {
             image: '/images/soins-parodontologie.jpg',

@@ -1476,7 +1476,7 @@ img {
 .cta-refined {
   position: relative;
   padding: 120px 0;
-  background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&h=900&fit=crop');
+  background-image: url('/images/clinique/visite-clinique.jpg');
   /* Professional Dental Clinic */
   background-size: cover;
   background-position: center;
@@ -1993,7 +1993,7 @@ img {
 .clinic-visit-section {
   position: relative;
   padding: 120px 0;
-  background: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80') center/cover no-repeat;
+  background: url('/images/clinique/visite-clinique.jpg') center/cover no-repeat;
   text-align: center;
   color: var(--white);
 }
