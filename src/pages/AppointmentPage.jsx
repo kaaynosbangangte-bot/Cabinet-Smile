@@ -4,6 +4,7 @@ import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 import { db } from '../firebase/config'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import emailjs from '@emailjs/browser'
 
 function AppointmentPage() {
     const [submitted, setSubmitted] = useState(false)
@@ -44,6 +45,30 @@ function AppointmentPage() {
                 createdAt: serverTimestamp(),
                 updatedAt: serverTimestamp()
             })
+
+            // 2. Envoi de la notification Email à la clinique
+            const emailParams = {
+                name: formData.name,
+                phone: formData.phone,
+                email: formData.email,
+                service: formData.service,
+                date: formData.date,
+                time: formData.time,
+                message: formData.message || "Aucun message"
+            }
+
+            try {
+                await emailjs.send(
+                    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                    emailParams,
+                    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+                )
+                console.log('Notification email envoyée avec succès')
+            } catch (emailError) {
+                console.error('Erreur lors de l\'envoi de l\'email:', emailError)
+                // On ne bloque pas l'utilisateur car le RDV est déjà dans Firebase
+            }
 
             toast.success('Demande de rendez-vous envoyée avec succès!')
             window.scrollTo(0, 0)
@@ -172,22 +197,13 @@ function AppointmentPage() {
                                     </div>
                                     <div className="form-group-refined">
                                         <label><FiClock /> Heure souhaitée</label>
-                                        <select
+                                        <input
+                                            type="time"
                                             name="time"
                                             value={formData.time}
                                             onChange={handleChange}
                                             required
-                                        >
-                                            <option value="">Sélectionnez un créneau</option>
-                                            <option value="08:00">08:00 - 09:00</option>
-                                            <option value="09:00">09:00 - 10:00</option>
-                                            <option value="10:00">10:00 - 11:00</option>
-                                            <option value="11:00">11:00 - 12:00</option>
-                                            <option value="14:00">14:00 - 15:00</option>
-                                            <option value="15:00">15:00 - 16:00</option>
-                                            <option value="16:00">16:00 - 17:00</option>
-                                            <option value="17:00">17:00 - 18:00</option>
-                                        </select>
+                                        />
                                     </div>
                                 </div>
 

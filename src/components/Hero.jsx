@@ -12,7 +12,7 @@ function Hero() {
             id: 1,
             image: '/images/hero/hero-1.png',
             subtitle: 'Souriez en toute confiance, chaque jour',
-            title: 'Votre clinique bucco-dentaire pour des soins de qualité',
+            title: 'Votre clinique dentaire pour des soins de qualité',
             description: 'Nous prenons soin de vous grâce à des traitements bucco-dentaires modernes, sûrs et adaptés à toute la famille. Notre équipe de professionnels vous accompagne pour une santé bucco-dentaire durable.',
             cta: 'Explorer Nos Services'
         },

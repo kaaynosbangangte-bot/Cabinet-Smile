@@ -13,7 +13,7 @@ function AboutPage() {
             {/* Hero Section */}
             <div className="about-page-hero" data-aos="fade-in">
                 <div className="about-page-hero-content">
-                    <h4>À propos du Cabinet Bucco-Dentaire Smile</h4>
+                    <h4>À propos du Cabinet Dentaire Smile</h4>
                     <h1>Votre partenaire pour une santé bucco-dentaire optimale</h1>
                 </div>
             </div>
@@ -26,7 +26,7 @@ function AboutPage() {
                             <h4>Qui sommes-nous ?</h4>
                             <h2>Une référence d'excellence en soins bucco-dentaires modernes</h2>
                             <p>
-                                Fondé en 2015, le Cabinet Bucco-Dentaire Smile incarne une vision moderne de la médecine bucco-dentaire, fondée sur quatre piliers essentiels :
+                                Fondé en 2015, le Cabinet Dentaire Smile incarne une vision moderne de la médecine bucco-dentaire, fondée sur quatre piliers essentiels :
                             </p>
                             <ul className="simple-doc-list grid-2">
                                 <li>Précision clinique</li>
@@ -42,7 +42,7 @@ function AboutPage() {
                                     </p>
 
                                     <p>
-                                        Le Cabinet Bucco-Dentaire Smile s'appuie aujourd'hui sur six praticiens, disponibles 24h/24 et 7j/7, accompagnés par une équipe d'assistantes qualifiées et engagées. Cette organisation garantit une continuité de soins absolue, dans un environnement moderne, calme et parfaitement sécurisé.
+                                        Le Cabinet Dentaire Smile s'appuie aujourd'hui sur six praticiens, disponibles 24h/24 et 7j/7, accompagnés par une équipe d'assistantes qualifiées et engagées. Cette organisation garantit une continuité de soins absolue, dans un environnement moderne, calme et parfaitement sécurisé.
                                     </p>
 
                                     <p>
@@ -72,7 +72,7 @@ function AboutPage() {
                                     </p>
 
                                     <p className="simple-doc-signature">
-                                        Au Cabinet Bucco-Dentaire Smile<br />
+                                        Au Cabinet Dentaire Smile<br />
                                         « On y arrive KO, on en repart OK. »
                                     </p>
                                     <p className="simple-doc-author">

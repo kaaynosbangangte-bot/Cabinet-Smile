@@ -17,9 +17,9 @@ function ContactPage() {
                     <div className="contact-info-grid">
                         <div className="info-text-side" data-aos="fade-right">
                             <h4>Rendez-nous visite / appelez-nous</h4>
-                            <h2>Moyens pratiques pour contacter le Cabinet bucco-dentaire smile</h2>
+                            <h2>Moyens pratiques pour contacter le Cabinet Dentaire Smile</h2>
                             <p>
-                                Chez Cabinet bucco-dentaire Smile, votre sourire est notre priorité. Contactez-nous pour des soins personnalisés et des conseils adaptés à votre santé bucco-dentaire.
+                                Au Cabinet Dentaire Smile, votre sourire est notre priorité. Contactez-nous pour des soins personnalisés et des conseils adaptés à votre santé bucco-dentaire.
                             </p>
                             <div className="contact-methods">
                                 <div className="method-item">
@@ -34,7 +34,7 @@ function ContactPage() {
                         <div className="hours-card" data-aos="fade-left">
                             <h3><FiRefreshCw /> Horaires d'ouverture</h3>
                             <ul className="hours-list">
-                                <li><FiCheckCircle /> ouvert tout les jours du lundi au dimanche 24h/24 et 7j/7 </li>
+                                <li><FiCheckCircle /> Tous les jours, du lundi au dimanche, 24h/24 et 7j/7</li>
 
                             </ul>
                             <div className="urgency-box">

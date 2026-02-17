@@ -12,7 +12,7 @@ function Header() {
         <header className="header">
             <div className="header-container">
                 <Link to="/" className="logo" onClick={closeMenu}>
-                    <img src="/logo.png" alt="Cabinet Bucco-Dentaire Smile" className="logo-img" />
+                    <img src="/logo.png" alt="Cabinet Dentaire Smile" className="logo-img" />
                 </Link>
 
                 <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>

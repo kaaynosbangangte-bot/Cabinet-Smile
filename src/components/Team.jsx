@@ -63,25 +63,25 @@ function Team() {
         },
         {
             name: 'Mme MAWA Caroline',
-            role: 'Assistante Bucco-Dentaire',
+            role: 'Assistante Dentaire',
             img: '/images/team/mme-mawa-caroline.jpg',
             oncdc: null
         },
         {
             name: 'Mme DOUGLA Christelle',
-            role: 'Assistante Bucco-Dentaire',
+            role: 'Assistante Dentaire',
             img: '/images/team/mme-dougla-christelle.jpg',
             oncdc: null
         },
         {
             name: 'Mme DONFACK Esther',
-            role: 'Assistante Bucco-Dentaire',
+            role: 'Assistante Dentaire',
             img: '/images/team/mme-donfack-esther.jpg',
             oncdc: null
         },
         {
             name: 'Mme ADIFFO Valoide',
-            role: 'Assistante Bucco-Dentaire',
+            role: 'Assistante Dentaire',
             img: '/images/team/mme-adiffo-valoide.jpg',
             oncdc: null
         }
