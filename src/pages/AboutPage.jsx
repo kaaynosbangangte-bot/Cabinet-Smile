@@ -24,7 +24,7 @@ function AboutPage() {
                     <div className="about-who-grid">
                         <div className="about-who-text" data-aos="fade-right">
                             <h4>Qui sommes-nous ?</h4>
-                            <h2>Une référence d'excellence en soins bucco-dentaires modernes</h2>
+                            <h2>Nous proposons des soins bucco-dentaires modernes.</h2>
                             <p>
                                 Fondé en 2015, le Cabinet Dentaire Smile incarne une vision moderne de la médecine bucco-dentaire, fondée sur quatre piliers essentiels :
                             </p>
