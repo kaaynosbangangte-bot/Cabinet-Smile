@@ -1607,18 +1607,23 @@ img {
 }
 
 .news-grid-refined {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .news-card-refined {
+  flex: 1 1 380px;
+  max-width: 420px;
   background: var(--white);
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: var(--transition);
   border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
 }
 
 .news-card-refined:hover {
@@ -1659,6 +1664,9 @@ img {
 
 .news-content-refined {
   padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .news-article-title-refined {
@@ -1996,6 +2004,38 @@ img {
   background: url('/images/clinique/visite-clinique.jpg') center/cover no-repeat;
   text-align: center;
   color: var(--white);
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.news-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.news-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+.news-full-content-expanded p {
+  margin-bottom: 15px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.news-full-content-expanded strong {
+  color: var(--primary-green);
 }
 
 .clinic-visit-section::before {

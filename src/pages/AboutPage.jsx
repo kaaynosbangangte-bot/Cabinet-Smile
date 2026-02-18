@@ -24,7 +24,7 @@ function AboutPage() {
                     <div className="about-who-grid">
                         <div className="about-who-text" data-aos="fade-right">
                             <h4>Qui sommes-nous ?</h4>
-                            <h2>Un cabinet engagé dans des soins bucco-dentaires modernes.</h2>
+                            <h2>Un cabinet  engagé à vous offrir des soins bucco-dentaires  sécurisés et de qualité</h2>
                             <p>
                                 Fondé en 2015, le Cabinet Dentaire Smile incarne une vision moderne de la médecine bucco-dentaire, fondée sur quatre piliers essentiels :
                             </p>
@@ -50,9 +50,9 @@ function AboutPage() {
                                     </p>
                                     <ul className="simple-doc-list">
                                         <li>Cinq unités de soins autonomes et entièrement équipées</li>
-                                        <li>Un laboratoire de prothèses bucco-dentaires intégré et numérisé</li>
+                                        <li>Un laboratoire de Prothèse dentaire intégré et numérisé</li>
                                         <li>Une unité d'imagerie odonto-stomatologique numérique (CBCT-3D)</li>
-                                        <li>Une salle de stérilisation aux normes internationales, garantissant une prévention rigoureuse de toute contamination croisée</li>
+                                        <li>Une salle de stérilisation aux normes, garantissant une prévention rigoureuse de toute contamination croisée</li>
                                     </ul>
 
                                     <p>

@@ -5,66 +5,232 @@ const galleryImages = [
     // Clinique / Salles
     {
         id: 1,
+        url: '/images/gallery/clinique/stérilisation.jpg',
+        category: 'salle',
+        title: 'Salle de stérilisation'
+    },
+    {
+        id: 2,
+        url: '/images/gallery/clinique/unité de radio.jpg',
+        category: 'salle',
+        title: 'l’unité de radio'
+    },
+    {
+        id: 3,
+        url: '/images/gallery/clinique/hospitalisation.jpg',
+        category: 'salle',
+        title: 'salle d’hospitalisation'
+    },
+    {
+        id: 4,
+        url: '/images/gallery/clinique/réunion.jpg',
+        category: 'salle',
+        title: 'salle de réunion'
+    },
+    {
+        id: 5,
         url: '/images/gallery/clinique/accueil.jpg',
         category: 'salle',
         title: 'Espace Accueil & Réception'
     },
     {
-        id: 2,
+        id: 6,
+        url: '/images/gallery/clinique/accueil.jpg',
+        category: 'salle',
+        title: 'salle d’attente secretariat'
+    },
+    {
+        id: 7,
+        url: '/images/gallery/clinique/salle 02.jpg',
+        category: 'salle',
+        title: 'salle 02'
+    },
+    {
+        id: 8,
+        url: '/images/gallery/clinique/pédiatrie.jpg',
+        category: 'salle',
+        title: 'salle de pédiatrie'
+    },
+
+
+    {
+        id: 9,
         url: '/images/gallery/clinique/couloir.jpg',
         category: 'salle',
         title: 'Accès aux Salles de Soins'
     },
     {
-        id: 3,
+        id: 10,
         url: '/images/gallery/clinique/couloir%20espace.jpg',
         category: 'salle',
         title: 'Espace Circulation Lumineux'
     },
     {
-        id: 4,
+        id: 11,
         url: '/images/gallery/clinique/sale%20de%20réunion.jpg',
         category: 'salle',
         title: 'Salle de Conférence & Réunion'
     },
     {
-        id: 5,
+        id: 12,
         url: '/images/gallery/clinique/smile.jpg',
         category: 'salle',
         title: 'Ambiance Smile'
     },
     // Équipe / Personnel
     {
-        id: 6,
+        id: 13,
         url: '/images/gallery/equipe/equipe%20de%20la%20clinique%20.jpg',
         category: 'personnel',
         title: 'L\'Équipe du Cabinet Smile'
     },
     // Technologie / Équipement
     {
-        id: 7,
+        id: 14,
         url: '/images/gallery/technologie/equipement%201.jpg',
         category: 'equipement',
         title: 'Unité de Soin Haute Performance'
     },
     {
-        id: 8,
+        id: 15,
         url: '/images/gallery/technologie/equipement%202.jpg',
         category: 'equipement',
         title: 'Plateau Technique Moderne'
     },
     {
-        id: 9,
+        id: 16,
         url: '/images/gallery/technologie/equipement%203.jpg',
         category: 'equipement',
         title: 'Diagnostic de Précision'
     },
     {
-        id: 10,
+        id: 17,
         url: '/images/gallery/technologie/equipement%204.jpg',
         category: 'equipement',
         title: 'Confort & Technologie'
-    }
+    },
+    {
+        id: 33,
+        url: '/images/gallery/technologie/Scanner 3D.jpg',
+        category: 'equipement',
+        title: 'Scanner 3D'
+    },
+    // Équipe / Personnel
+    {
+        id: 18,
+        url: '/images/gallery/equipe/personelle1.jpg',
+        category: 'personnel',
+        title: 'Dr BOUTCHOUANG Raoul'
+    },
+    {
+        id: 19,
+        url: '/images/gallery/equipe/personelle2.jpg',
+        category: 'personnel',
+        title: 'Mme METCHOUAGUI Blandine. Assistante administrative'
+    },
+    {
+        id: 20,
+        url: '/images/gallery/equipe/personelle3.jpg',
+        category: 'personnel',
+        title: 'Mme Anne SEEM. Assistante administrative'
+    },
+    {
+        id: 21,
+        url: '/images/gallery/equipe/personelle4.jpg',
+        category: 'personnel',
+        title: 'Dr SAMEN Hermann'
+    },
+    {
+        id: 22,
+        url: '/images/gallery/equipe/personelle5.jpg',
+        category: 'personnel',
+        title: 'Dr MAGOUOH Sorèle'
+    },
+    {
+        id: 23,
+        url: '/images/gallery/equipe/personelle6.jpg',
+        category: 'personnel',
+        title: 'Dr SIMO Arthur'
+    },
+    {
+        id: 24,
+        url: '/images/gallery/equipe/personelle7.jpg',
+        category: 'personnel',
+        title: 'Dr WANANG Eva'
+    },
+    {
+        id: 25,
+        url: '/images/gallery/equipe/personelle8.jpg',
+        category: 'personnel',
+        title: 'Dr MANYA Leticia'
+    },
+    {
+        id: 26,
+        url: '/images/gallery/equipe/personelle9.jpg',
+        category: 'personnel',
+        title: 'Mme DOUGLA Christelle. Assistante Dentaire'
+    },
+    {
+        id: 27,
+        url: '/images/gallery/equipe/personelle10.jpg',
+        category: 'personnel',
+        title: 'Mr PENKA Cédric. Chauffeur /coursier'
+    },
+    {
+        id: 28,
+        url: '/images/gallery/equipe/personelle11.jpg',
+        category: 'personnel',
+        title: 'Mme ATONFACK Stéphanie. Assistante administrative'
+    },
+    {
+        id: 29,
+        url: '/images/gallery/equipe/personelle12.jpg',
+        category: 'personnel',
+        title: 'Mme DONFACK Esther. Assistante dentaire'
+    },
+    {
+        id: 30,
+        url: '/images/gallery/equipe/personelle13.jpg',
+        category: 'personnel',
+        title: 'ADIFFO Valoide. Assistante dentaire'
+    },
+    {
+        id: 31,
+        url: '/images/gallery/equipe/personelle14.jpg',
+        category: 'personnel',
+        title: 'NGALAMO Ivan. Stagiaire'
+    },
+    {
+        id: 32,
+        url: '/images/gallery/equipe/personelle15.jpg',
+        category: 'personnel',
+        title: 'NEMBOT Brandon technicien de surface'
+    },
+    // {
+    //     id: 33,
+    //     url: '/images/gallery/equipe/personelle16.jpg',
+    //     category: 'personnel',
+    //     title: 'L\'Équipe du Cabinet Smile'
+    // },
+    {
+        id: 34,
+        url: '/images/gallery/equipe/personelle17.jpg',
+        category: 'personnel',
+        title: 'TIAM Joël.  Stagiaire'
+    },
+    {
+        id: 35,
+        url: '/images/gallery/equipe/personelle18.jpg',
+        category: 'personnel',
+        title: 'Mme MAWA Caroline   Assistante dentaire'
+    },
+    {
+        id: 36,
+        url: '/images/gallery/equipe/personelle19.jpg',
+        category: 'personnel',
+        title: 'EMBO Faith'
+    },
+
 ];
 
 function GalleryPage() {

@@ -21,7 +21,7 @@ function Hero() {
             image: '/images/hero/hero-2.jpg',
             subtitle: 'Technologie de pointe',
             title: 'Des équipements modernes pour votre confort',
-            description: 'Nous utilisons les dernières innovations technologiques pour garantir des diagnostics précis et des traitements moins invasifs.',
+            description: 'Nous nous appuyons sur des technologies récentes afin d’améliorer la précision des diagnostics et de proposer des traitements adaptés et aussi confortables que possible.',
             cta: 'Découvrir nos équipements'
         },
         {
@@ -29,7 +29,7 @@ function Hero() {
             image: '/images/hero/hero-3.jpg',
             subtitle: 'Équipe d\'experts',
             title: 'Des professionnels passionnés à votre écoute',
-            description: 'Nos dentistes hautement qualifiés travaillent avec passion pour vous offrir le meilleur niveau de soin personnalisé.',
+            description: 'Nos dentistes qualifiés s’engagent chaque jour à proposer des soins attentifs et adaptés aux besoins de chaque patient.',
             cta: 'Rencontrez l\'équipe'
         }
     ];

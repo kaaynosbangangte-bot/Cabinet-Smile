@@ -92,7 +92,7 @@ function Team() {
             <div className="container">
                 <div className="team-header-refined" data-aos="fade-up">
                     <h4 className="team-subtitle-refined">Notre Équipe</h4>
-                    <h2 className="team-title-refined">Des experts à votre service</h2>
+                    <h2 className="team-title-refined">Une équipe attentive et disponible pour assurer votre prise en charge</h2>
                 </div>
 
                 <Swiper
