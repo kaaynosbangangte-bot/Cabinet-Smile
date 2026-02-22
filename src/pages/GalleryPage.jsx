@@ -110,10 +110,16 @@ const galleryImages = [
         title: 'Confort & Technologie'
     },
     {
-        id: 33,
+        id: 37,
         url: '/images/gallery/technologie/Scanner 3D.jpg',
         category: 'equipement',
         title: 'Scanner 3D'
+    },
+    {
+        id: 38,
+        url: '/images/gallery/technologie/equipement 5.jpg',
+        category: 'equipement',
+        title: 'Équipement'
     },
     // Équipe / Personnel
     {
@@ -229,6 +235,31 @@ const galleryImages = [
         url: '/images/gallery/equipe/personelle19.jpg',
         category: 'personnel',
         title: 'EMBO Faith'
+    },
+
+    {
+        id: 40,
+        url: '/images/gallery/clinique/salle 03.jpg',
+        category: 'salle',
+        title: 'salle'
+    },
+    {
+        id: 41,
+        url: '/images/gallery/clinique/salle 04.jpg',
+        category: 'salle',
+        title: 'salle'
+    },
+    {
+        id: 42,
+        url: '/images/gallery/clinique/salle 05.jpg',
+        category: 'salle',
+        title: 'salle'
+    },
+    {
+        id: 43,
+        url: '/images/gallery/clinique/salle 06.jpg',
+        category: 'salle',
+        title: 'salle'
     },
 
 ];
