@@ -1,8 +1,57 @@
+import { useState } from 'react'
 import { FiPhone, FiMail, FiClock, FiRefreshCw, FiCheckCircle } from 'react-icons/fi'
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
+import { db } from '../firebase/config'
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function ContactPage() {
+    const [loading, setLoading] = useState(false)
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    })
+
+    const handleChange = (e) => {
+        const { name, value } = e.target
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }))
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        setLoading(true)
+
+        try {
+            await addDoc(collection(db, 'messages'), {
+                ...formData,
+                source: 'Page Contact',
+                status: 'unread',
+                createdAt: serverTimestamp()
+            })
+
+            toast.success('Message envoyé avec succès ! Nous vous répondrons bientôt.')
+            setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                message: ''
+            })
+        } catch (error) {
+            console.error('Error sending message:', error)
+            toast.error('Une erreur est survenue lors de l\'envoi. Veuillez réessayer.')
+        } finally {
+            setLoading(false)
+        }
+    }
+
     return (
         <div className="contact-page">
+            <ToastContainer />
             {/* Hero Section */}
             <div className="contact-page-hero" data-aos="fade-in">
                 <div className="contact-page-hero-content">
@@ -56,22 +105,52 @@ function ContactPage() {
                         <div className="form-side" data-aos="fade-left">
                             <h4>Formulaire de contact</h4>
                             <h2>Nous vous répondrons dès que possible</h2>
-                            <form className="contact-form-refined">
+                            <form className="contact-form-refined" onSubmit={handleSubmit}>
                                 <div className="form-group-refined">
-                                    <input type="text" placeholder="Nom" required />
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="Nom"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required
+                                    />
                                 </div>
                                 <div className="form-row-refined">
                                     <div className="form-group-refined">
-                                        <input type="email" placeholder="Adresse Email" required />
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            placeholder="Adresse Email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            required
+                                        />
                                     </div>
                                     <div className="form-group-refined">
-                                        <input type="tel" placeholder="Numéro de tél" required />
+                                        <input
+                                            type="tel"
+                                            name="phone"
+                                            placeholder="Numéro de tél"
+                                            value={formData.phone}
+                                            onChange={handleChange}
+                                            required
+                                        />
                                     </div>
                                 </div>
                                 <div className="form-group-refined">
-                                    <textarea placeholder="Message" rows="5" required></textarea>
+                                    <textarea
+                                        name="message"
+                                        placeholder="Message"
+                                        rows="5"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        required
+                                    ></textarea>
                                 </div>
-                                <button type="submit" className="btn-pill-refined btn-contact-submit">Envoyer le message</button>
+                                <button type="submit" className="btn-pill-refined btn-contact-submit" disabled={loading}>
+                                    {loading ? <><FiRefreshCw className="spin" /> Envoi...</> : 'Envoyer le message'}
+                                </button>
                             </form>
                         </div>
                     </div>

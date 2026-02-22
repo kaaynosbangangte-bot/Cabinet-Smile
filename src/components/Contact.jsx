@@ -1,8 +1,57 @@
-import { FiPhone, FiMail, FiMapPin, FiClock } from 'react-icons/fi'
+import { useState } from 'react'
+import { FiPhone, FiMail, FiMapPin, FiClock, FiRefreshCw } from 'react-icons/fi'
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
+import { db } from '../firebase/config'
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function Contact() {
+    const [loading, setLoading] = useState(false)
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    })
+
+    const handleChange = (e) => {
+        const { id, value } = e.target
+        setFormData(prev => ({
+            ...prev,
+            [id]: value
+        }))
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        setLoading(true)
+
+        try {
+            await addDoc(collection(db, 'messages'), {
+                ...formData,
+                source: 'Accueil',
+                status: 'unread',
+                createdAt: serverTimestamp()
+            })
+
+            toast.success('Message envoyé avec succès ! Nous vous répondrons bientôt.')
+            setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                message: ''
+            })
+        } catch (error) {
+            console.error('Error sending message:', error)
+            toast.error('Une erreur est survenue lors de l\'envoi. Veuillez réessayer.')
+        } finally {
+            setLoading(false)
+        }
+    }
+
     return (
         <section className="contact-refined" id="contact">
+            <ToastContainer />
             <div className="container">
                 <div className="contact-header-refined">
                     <h4 className="contact-subtitle-refined">Contact</h4>
@@ -10,28 +59,55 @@ function Contact() {
                 </div>
 
                 <div className="contact-container-refined">
-                    <form className="contact-form-refined" data-aos="flip-left">
+                    <form className="contact-form-refined" onSubmit={handleSubmit} data-aos="flip-left">
                         <h3 className="form-title-refined">Envoyez-nous un message</h3>
                         <div className="form-grid-refined">
                             <div className="form-group-refined">
                                 <label htmlFor="name">Nom complet</label>
-                                <input type="text" id="name" placeholder="Votre nom" />
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Votre nom"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
                             <div className="form-group-refined">
                                 <label htmlFor="email">Email</label>
-                                <input type="email" id="email" placeholder="votre@email.com" />
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="votre@email.com"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
                         </div>
                         <div className="form-group-refined">
                             <label htmlFor="phone">Téléphone</label>
-                            <input type="tel" id="phone" placeholder="06 12 34 56 78" />
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="06 12 34 56 78"
+                                value={formData.phone}
+                                onChange={handleChange}
+                                required
+                            />
                         </div>
                         <div className="form-group-refined">
                             <label htmlFor="message">Message</label>
-                            <textarea id="message" placeholder="Décrivez votre demande..."></textarea>
+                            <textarea
+                                id="message"
+                                placeholder="Décrivez votre demande..."
+                                value={formData.message}
+                                onChange={handleChange}
+                                required
+                            ></textarea>
                         </div>
-                        <button type="submit" className="btn-contact-refined">
-                            Envoyer le message
+                        <button type="submit" className="btn-contact-refined" disabled={loading}>
+                            {loading ? <><FiRefreshCw className="spin" /> Envoi...</> : 'Envoyer le message'}
                         </button>
                     </form>
 
