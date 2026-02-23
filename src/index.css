@@ -2609,7 +2609,7 @@ img {
 .appointment-page-hero {
   position: relative;
   height: 350px;
-  background: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80') center/cover no-repeat;
+  background: url('/images/rendez_vous.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

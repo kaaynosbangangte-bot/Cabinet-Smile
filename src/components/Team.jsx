@@ -9,7 +9,7 @@ function Team() {
     const team = [
         {
             name: 'Dr. BOUTCHOUANG Raoul',
-            role: 'Chirurgien-Dentiste',
+            role: 'Chirurgien-Dentiste Orthodontiste',
             img: '/images/team/dr-boutchouang-raoul.jpg',
             oncdc: '257'
         },
@@ -44,7 +44,7 @@ function Team() {
             oncdc: '1121'
         },
         {
-            name: 'Mlle ATONFACK Stéphanie Laure',
+            name: 'Mme ATONFACK Stéphanie Laure',
             role: 'Assistante Administrative - Comptable',
             img: '/images/team/mlle-atonfack-stephanie.jpg',
             oncdc: null

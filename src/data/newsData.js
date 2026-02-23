@@ -1,7 +1,7 @@
 export const newsArticles = [
     {
         id: 1,
-        title: "10 Ans d'Excellence et de Confiance",
+        title: "10 ans d’existence, 10 ans de collaboration, 10 ans de confiance et de projets menés ensemble.",
         excerpt: "À l’occasion de nos 10 années d’existence et de collaboration, nous adressons nos sincères remerciements aux nombreux patients qui nous font confiance.",
         date: "18 Février 2026",
         image: "/images/news/10-ans-smile.jpg",
