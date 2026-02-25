@@ -12,7 +12,7 @@ function Hero() {
             id: 1,
             image: '/images/hero/hero-1.png',
             subtitle: 'Souriez en toute confiance, chaque jour',
-            title: 'Votre clinique dentaire pour des soins de qualité',
+            title: 'La clinique dentaire assure votre  prise en charge continue, 24 heures sur 24 et 7 jours sur 7.',
             description: 'Nous prenons soin de vous grâce à des traitements bucco-dentaires modernes, sûrs et adaptés à toute la famille. Notre équipe de professionnels vous accompagne pour une santé bucco-dentaire durable.',
             cta: 'Explorer Nos Services'
         },
@@ -20,7 +20,7 @@ function Hero() {
             id: 2,
             image: '/images/hero/hero-2.jpg',
             subtitle: 'Technologie de pointe',
-            title: 'Des équipements modernes pour votre confort',
+            title: 'Un plateau technique moderne assurant des soins sécurisés et un confort optimal.',
             description: 'Nous nous appuyons sur des technologies récentes afin d’améliorer la précision des diagnostics et de proposer des traitements adaptés et aussi confortables que possible.',
             cta: 'Découvrir nos équipements'
         },
